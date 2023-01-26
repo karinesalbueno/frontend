@@ -24,6 +24,7 @@ const Products = () => {
                     <ProductItem
                         key={product.id}
                         id={product.id}
+                        image={product.photo}
                         title={product.name}
                         price={parseFloat(product.price)}
                         description={product.description}

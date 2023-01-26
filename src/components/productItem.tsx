@@ -4,14 +4,16 @@ interface ICardProps {
     id: number;
     title: string;
     description: string;
+    image: string;
     price: any;
 }[]
 
 export default function ProductItem(props: ICardProps) {
 
-    const { title, price, description, id } = props;
+    const { title, price, description, image, id } = props;
     return (
         <Styled.CardItemLi>
+            <img src={image} alt="image" />
             <div>
                 <h3>{title}</h3>
                 <div>${price}</div>
