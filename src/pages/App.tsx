@@ -9,7 +9,6 @@ export default function App() {
             <GlobalStyles />
             <Header />
             <Home />
-            <Button />
         </>
     )
 }
