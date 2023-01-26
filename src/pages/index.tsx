@@ -1,5 +1,5 @@
-import Header from 'components/header'
-import Button from '@/components/button'
+import Header from 'src/components/header'
+import Button from 'src/components/button'
 
 export default function Home() {
   return (
