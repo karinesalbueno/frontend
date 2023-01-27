@@ -1,11 +1,10 @@
-import Header from 'src/components/header'
-import Button from 'src/components/button'
+import { Provider } from 'react-redux'
+
+import store from 'src/store/store'
+import App from './App'
 
 export default function Home() {
-  return (
-    <>
-      <Header />
-      <Button />
-    </>
-  )
+    return (
+        <Provider store={store} children={<App />} />
+    )
 }
