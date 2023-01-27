@@ -1,9 +1,9 @@
 import Image from 'next/image'
 import Logo1 from "../assets/MKS.svg"
 import Logo2 from "../assets/Sistemas.svg"
+import CartButton from './cart'
 
 import * as Styled from '../styles/Header'
-import CartButton from './cart'
 
 export default function Header() {
     return (
