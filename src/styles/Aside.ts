@@ -29,3 +29,37 @@ export const Backdrop = styled.div`
     width: 100vw;
     height: 100vh;
 `;
+
+export const Header = styled.header`
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #ffffff;
+    margin: 0 20px 0 25px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 33px;
+
+    h4 {
+        width: 160px;
+        height: 56px @media (min-width: 768px) {
+            width: 200px;
+        }
+    }
+
+    img {
+        height: 45px;
+        width: 45px;
+
+        @media (min-width: 768px) {
+            height: 38px;
+            width: 38px;
+        }
+    }
+
+    @media (min-width: 768px) {
+        font-size: 1.688rem;
+        margin: 0 22px 0 47px;
+    }
+`;
