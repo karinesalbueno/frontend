@@ -10,6 +10,21 @@ export const Section = styled.section`
     @media (min-width: 768px) {
     }
 
+    ::-webkit-scrollbar {
+        width: 6px;
+        height: 3px;
+      }
+
+      ::-webkit-scrollbar-track {
+        background: transparent;
+        padding: 2px;
+      }
+
+      ::-webkit-scrollbar-thumb {
+        background-color: #ffffff;
+        border-radius: 13px;
+      }
+
     ul {
         padding: 0 50px;
     }
