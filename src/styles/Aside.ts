@@ -7,8 +7,8 @@ export const Aside = styled.aside`
     top: 0px;
     bottom: 0px;
     right: 0px;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-rows: 14% auto 97px;
     z-index: 3;
 
     background: #0f52ba;
@@ -62,4 +62,13 @@ export const Header = styled.header`
         font-size: 1.688rem;
         margin: 0 22px 0 47px;
     }
+`;
+
+export const Footer = styled.footer`
+    position: fixed;
+    width: 100%;
+    height: 97px;
+    bottom: 0;
+    background: #000000;
+    color: #ffffff;
 `;

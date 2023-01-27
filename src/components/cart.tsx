@@ -8,7 +8,7 @@ import * as Styled from '../styles/Header'
 
 interface IAmountProps { cart: { totalQuantity: number }; }
 
-const CartButton = () => {
+export default function CartButton() {
     const amountAdded = useSelector((state: IAmountProps) => state.cart.totalQuantity);
 
     const dispatch = useDispatch();
@@ -24,5 +24,3 @@ const CartButton = () => {
         </Styled.Cart>
     );
 };
-
-export default CartButton;

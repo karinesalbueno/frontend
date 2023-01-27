@@ -22,10 +22,11 @@ export default function Home() {
     return (
         <Styled.Main>
             <Products />
-            {showCart && <Aside id={0} title={'produto'} description={''} price={100}
-                isOpen={showCart}
-                onClose={toggleCartHandler}
-            />}
+            {showCart &&
+                <Aside
+                    isOpen={showCart}
+                    onClose={toggleCartHandler}
+                />}
         </Styled.Main>
     )
 }
