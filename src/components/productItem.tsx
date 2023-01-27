@@ -14,11 +14,14 @@ export default function ProductItem(props: ICardProps) {
     return (
         <Styled.CardItemLi>
             <img src={image} alt="image" />
-            <div>
+
+            <Styled.InformationsDiv>
                 <h3>{title}</h3>
-                <div>${price}</div>
-            </div>
-            <p>{description}</p>
+                <div className='price'>R${price}</div>
+            </Styled.InformationsDiv>
+
+            <small>{description}</small>
+
             <div>
                 <button onClick={() => { }}>Comprar</button>
             </div>

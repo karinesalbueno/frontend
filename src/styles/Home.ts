@@ -25,11 +25,39 @@ export const CardItemLi = styled.li`
 
     list-style: none;
 
-    img{
+    img {
         height: 100px;
     }
 
-    p{
-        font-size: 0.8rem
+    small {
+        color: #2c2c2c;
+    }
+`;
+
+export const InformationsDiv = styled.div`
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    padding: 0;
+    height: 50px;
+
+    h3 {
+        margin: 0;
+        font-style: normal;
+        font-size: 1.1rem;
+        line-height: 19px;
+    }
+
+    .price {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #373737;
+        border-radius: 5px;
+        min-width: 64px;
+        height: 26px;
+        color: #ffffff;
+        font-weight: 700;
+        font-size: 15px;
     }
 `;
