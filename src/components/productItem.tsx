@@ -24,6 +24,7 @@ export default function ProductItem(props: ICardProps) {
                 id,
                 title,
                 price,
+                image
             })
         );
     };

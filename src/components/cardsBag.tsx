@@ -10,7 +10,8 @@ interface ICartItemsProps {
             price: number,
             quantity: number,
             totalPrice: number,
-            name: string
+            name: string,
+            image: string
         }[],
         totalQuantity: number,
         changed: boolean
@@ -30,18 +31,23 @@ export default function CardsFromBag() {
     return (
         <Styled.Section>
             <ul>
-                {cartItems.map((item) => (
-                    <CardItem
-                        key={item.id}
-                        item={{
-                            id: item.id,
-                            title: item.name,
-                            quantity: item.quantity,
-                            total: item.totalPrice,
-                            price: item.price,
-                        }}
-                    />
-                ))}
+                {
+                    cartItems.length === 0 ?
+                        <h3>Poxa, seu carrinho está vazio :&#40;</h3> :
+                        cartItems.map((item) => (
+
+                            <CardItem
+                                key={item.id}
+                                item={{
+                                    id: item.id,
+                                    title: item.name,
+                                    quantity: item.quantity,
+                                    total: item.totalPrice,
+                                    price: item.price,
+                                    image: item.image
+                                }}
+                            />
+                        ))}
             </ul>
 
             <Styled.TotalDiv>

@@ -65,10 +65,19 @@ export const Header = styled.header`
 `;
 
 export const Footer = styled.footer`
-    position: fixed;
+    display:flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
     height: 97px;
     bottom: 0;
     background: #000000;
     color: #ffffff;
+    cursor: pointer;
+
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 15px;
 `;

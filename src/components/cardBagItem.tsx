@@ -2,10 +2,12 @@
 import { useDispatch } from 'react-redux';
 import { cartActions } from 'src/store/cart-slice';
 
+import * as Styled from '../styles/CardAside'
+
 export default function CardItem(props) {
     const dispatch = useDispatch();
 
-    let { title, quantity, total, price, id } = props.item;
+    let { title, quantity, price, id, image } = props.item;
 
     const removeItemHandler = () => {
         dispatch(cartActions.removeItemFromCart(id));
@@ -20,24 +22,27 @@ export default function CardItem(props) {
             })
         );
     };
+
     return (
-        <li>
-            <header>
-                <h3>{title}</h3>
-                <div>
-                    ${parseFloat(total).toFixed(2)}
-                    <span>(${parseFloat(price).toFixed(2)}/item)</span>
-                </div>
-            </header>
-            <div>
-                <div>
-                    x <span>{quantity}</span>
-                </div>
+        <Styled.Card>
+            <img
+                src={image.toString()}
+                alt="Image Product"
+            />
+            <h4>{title}</h4>
+
+            <Styled.SumDiv>
+                <small>Qtd:</small>
                 <div>
                     <button onClick={removeItemHandler}>-</button>
+                    <span className='border' />
+                    <span className='quantity'>{quantity}</span>
+                    <span className='border' />
                     <button onClick={addItemHandler}>+</button>
                 </div>
-            </div>
-        </li>
+            </Styled.SumDiv>
+
+            <span className='price'>R${parseFloat(price)}</span>
+        </Styled.Card>
     );
 };

@@ -16,7 +16,6 @@ const Products = () => {
     useEffect(() => {
         fetchProductsData()
     }, [])
-
     return (
         <Styled.Card>
             <Styled.CardItemUl>
