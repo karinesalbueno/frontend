@@ -19,12 +19,22 @@ export const Card = styled.div`
     }
 `;
 
+export const Skeleton = styled.div`
+    width: 70%;
+    margin: auto;
+
+    @media (min-width: 480px) {
+        width: 75%;
+    }
+`;
+
 export const CardItemUl = styled.ul`
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 18px;
     border-radius: 8px;
     padding: 0;
+    justify-items: center;
 
     @media (min-width: 480px) {
         grid-template-columns: repeat(2, 1fr);
@@ -35,6 +45,14 @@ export const CardItemUl = styled.ul`
         grid-template-columns: repeat(4, 1fr);
         gap: 30px 18px;
     }
+`;
+
+export const CardSkeletonLi = styled.li`
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #ffffff;
+    list-style: none;
 `;
 
 export const CardItemLi = styled.li`
