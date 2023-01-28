@@ -7,26 +7,27 @@ export const Section = styled.section`
     justify-content: space-between;
     color: #ffffff;
 
-    @media (min-width: 768px) {
-    }
-
     ::-webkit-scrollbar {
         width: 6px;
         height: 3px;
-      }
+    }
 
-      ::-webkit-scrollbar-track {
+    ::-webkit-scrollbar-track {
         background: transparent;
         padding: 2px;
-      }
+    }
 
-      ::-webkit-scrollbar-thumb {
+    ::-webkit-scrollbar-thumb {
         background-color: #ffffff;
         border-radius: 13px;
-      }
+    }
 
     ul {
-        padding: 0 50px;
+        padding: 0 40px;
+
+        @media (min-width: 768px) {
+            padding: 0 50px;
+        }
     }
 `;
 
@@ -39,30 +40,67 @@ export const Card = styled.li`
     color: #2c2c2c;
     box-shadow: -2px 2px 10px rgba(0, 0, 0, 0.05);
     border-radius: 8px;
-    margin-bottom: 28px;
+    margin-bottom: 20px;
+    padding: 10px 2px;
+    height: 200px;
 
-    padding: 19px;
+    @media (max-width: 767px) {
+        display: grid;
+        grid-template-areas:
+            "img img"
+            "h4 h4"
+            "div span ";
+        justify-items: center;
+        align-items: baseline;
+    }
 
-    height: 100px;
+    @media (min-width: 768px) {
+        height: 100px;
+        padding: 19px;
+        margin-bottom: 28px;
+    }
 
     img {
-        height: 60px;
-        width: 60px;
+        grid-area: img;
+        height: 100px;
+        width: 100px;
+
+        @media (min-width: 768px) {
+            height: 60px;
+            width: 60px;
+        }
     }
 
     h4 {
+        grid-area: h4;
         width: 113px;
         font-style: normal;
         font-weight: 400;
+
+        @media (max-width: 767px) {
+            margin: 0;
+        }
     }
 
     .price {
+        grid-area: span;
         font-weight: 700;
+
+        @media (max-width: 767px) {
+            background: #373737;
+            border-radius: 6px;
+            color: #ffffff;
+            padding: 8px 12px;
+        }
     }
 `;
 
 export const SumDiv = styled.div`
-    margin-bottom: 18px;
+    grid-area: div;
+
+    @media (min-width: 768px) {
+        margin-bottom: 18px;
+    }
 
     div {
         display: flex;
@@ -72,10 +110,18 @@ export const SumDiv = styled.div`
         border-radius: 4px;
         padding: 2px;
         margin-top: 4px;
+
+        @media (max-width: 767px) {
+            height: 35px;
+        }
     }
 
     small {
         font-size: 0.55rem;
+
+        @media (max-width: 767px) {
+            display: none;
+        }
     }
 
     button {

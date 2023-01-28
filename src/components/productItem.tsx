@@ -32,10 +32,13 @@ export default function ProductItem(props: ICardProps) {
     return (
         <Styled.CardItemLi>
             <div className='content'>
-                <img src={image} alt="image" />
+                <Styled.Image>
+                    <img src={image} alt="image" />
+                </Styled.Image>
+
                 <Styled.InformationsDiv>
                     <h3>{title}</h3>
-                    <div className='price'>R${price}</div>
+                    <Styled.Price>R${price}</Styled.Price>
                 </Styled.InformationsDiv>
 
                 <small>{description}</small>

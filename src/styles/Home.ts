@@ -14,7 +14,7 @@ export const Card = styled.div`
     margin: auto;
 
     @media (min-width: 480px) {
-        width: 80%;
+        width: 75%;
     }
 `;
 
@@ -32,7 +32,7 @@ export const CardItemUl = styled.ul`
 
     @media (min-width: 768px) {
         grid-template-columns: repeat(4, 1fr);
-        gap: 40px 18px;
+        gap: 30px 18px;
     }
 `;
 
@@ -50,12 +50,17 @@ export const CardItemLi = styled.li`
         padding: 10px 15px;
     }
 
-    img {
-        height: 100px;
-    }
-
     small {
         color: #2c2c2c;
+    }
+`;
+
+export const Image = styled.div`
+    width: 100%;
+    text-align: center;
+
+    img {
+        height: 100px;
     }
 `;
 
@@ -77,19 +82,19 @@ export const InformationsDiv = styled.div`
             font-size: 1rem;
         }
     }
+`;
 
-    .price {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background: #373737;
-        border-radius: 5px;
-        min-width: 64px;
-        height: 26px;
-        color: #ffffff;
-        font-weight: 700;
-        font-size: 15px;
-    }
+export const Price = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #373737;
+    border-radius: 5px;
+    min-width: 64px;
+    height: 26px;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 15px;
 `;
 
 export const Button = styled.button`
