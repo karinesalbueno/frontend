@@ -5,7 +5,6 @@ html,
 body {
     padding: 0;
     margin: 0;
-    background: #E5E5E5;
 }
 
 a {
