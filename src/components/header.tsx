@@ -13,9 +13,7 @@ export default function Header() {
                 <Image src={Logo2} alt="sistemas" id='logo' />
             </Styled.Logo>
 
-            <div>
-                <CartButton />
-            </div>
+            <CartButton />
         </Styled.Header>
     )
 }
