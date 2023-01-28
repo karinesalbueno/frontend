@@ -45,7 +45,7 @@ export default function ProductItem(props: ICardProps) {
             </div>
 
             <Styled.Button onClick={addToBagHandler}>
-                <Image src={logoBag} alt="bag" />
+                <Image src={logoBag} alt="bag" width={20} height={20}/>
                 <span>comprar</span>
             </Styled.Button>
         </Styled.CardItemLi>
