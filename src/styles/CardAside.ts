@@ -42,14 +42,16 @@ export const Card = styled.li`
     border-radius: 8px;
     margin-bottom: 20px;
     padding: 10px 2px;
-    height: 200px;
+    height: 220px;
+    width: 100%;
 
     @media (max-width: 767px) {
         display: grid;
         grid-template-areas:
+            "button button"
             "img img"
             "h4 h4"
-            "div span ";
+            "div span";
         justify-items: center;
         align-items: baseline;
     }
@@ -145,4 +147,22 @@ export const TotalDiv = styled.div`
     display: flex;
     justify-content: space-between;
     margin: 0 40px;
+`;
+
+export const Remove = styled.button`
+    grid-area: button;
+    position: relative;
+    justify-self: self-end;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 17px;
+    border: none;
+    background: none;
+    padding: 0;
+    left: 10px;
+
+    @media (min-width: 768px) {
+        display: none;
+    }
 `;

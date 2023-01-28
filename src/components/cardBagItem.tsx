@@ -13,6 +13,10 @@ export default function CardItem(props) {
         dispatch(cartActions.removeItemFromCart(id));
     };
 
+    const removeAllFromItemItemHandler = () => {
+        dispatch(cartActions.removeAllFromItemCart(id));
+    };
+
     const addItemHandler = () => {
         dispatch(
             cartActions.addItemToCart({
@@ -25,6 +29,7 @@ export default function CardItem(props) {
 
     return (
         <Styled.Card>
+            <Styled.Remove onClick={removeAllFromItemItemHandler}>X</Styled.Remove>
             <img
                 src={image.toString()}
                 alt="Image Product"
