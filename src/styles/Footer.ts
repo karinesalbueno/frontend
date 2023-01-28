@@ -11,11 +11,8 @@ export const Footer = styled.footer`
     color: #000000;
     text-align: center;
 
-    position: absolute;
     right: 0;
     left: 0;
     padding: 10px;
 
-    @media (min-width: 768px) {
-    }
 `;
