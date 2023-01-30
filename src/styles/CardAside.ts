@@ -25,7 +25,7 @@ export const Section = styled.section`
     ul {
         padding: 0 40px;
 
-        @media (min-width: 768px) {
+        @media (min-width: 600px) {
             padding: 0 50px;
         }
     }
@@ -45,7 +45,7 @@ export const Card = styled.li`
     height: 220px;
     width: 100%;
 
-    @media (max-width: 767px) {
+    @media (max-width: 600px) {
         display: grid;
         grid-template-areas:
             "button button"
@@ -56,7 +56,7 @@ export const Card = styled.li`
         align-items: baseline;
     }
 
-    @media (min-width: 768px) {
+    @media (min-width: 600px) {
         height: 100px;
         padding: 19px;
         margin-bottom: 28px;
@@ -67,7 +67,7 @@ export const Card = styled.li`
         height: 100px;
         width: 100px;
 
-        @media (min-width: 768px) {
+        @media (min-width: 600px) {
             height: 60px;
             width: 60px;
         }
@@ -79,7 +79,7 @@ export const Card = styled.li`
         font-style: normal;
         font-weight: 400;
 
-        @media (max-width: 767px) {
+        @media (max-width: 599px) {
             margin: 0;
         }
     }
@@ -88,7 +88,7 @@ export const Card = styled.li`
         grid-area: span;
         font-weight: 700;
 
-        @media (max-width: 767px) {
+        @media (max-width: 599px) {
             background: #373737;
             border-radius: 6px;
             color: #ffffff;
@@ -100,7 +100,7 @@ export const Card = styled.li`
 export const SumDiv = styled.div`
     grid-area: div;
 
-    @media (min-width: 768px) {
+    @media (min-width: 600px) {
         margin-bottom: 18px;
     }
 
@@ -162,7 +162,19 @@ export const Remove = styled.button`
     padding: 0;
     left: 10px;
 
-    @media (min-width: 768px) {
-        display: none;
+    img {
+        height: 18px;
+        widht: 18px;
+    }
+
+    @media (min-width: 600px) {
+        left: 100%;
+        bottom: 80%;
+        font-size: 11px;
+        color: #ffffff;
+        background: #000;
+        padding: 2px;
+        width: 20px;
+        border-radius: 20px;
     }
 `;
