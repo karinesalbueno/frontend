@@ -14,7 +14,7 @@ export const Aside = styled.aside`
     background: #0f52ba;
     box-shadow: -5px 0px 6px rgba(0, 0, 0, 0.13);
 
-    @media (min-width: 768px) {
+    @media (min-width: 600px) {
         width: 486px;
     }
 `;
@@ -43,7 +43,7 @@ export const Header = styled.header`
 
     h4 {
         width: 160px;
-        height: 56px @media (min-width: 768px) {
+        height: 56px @media (min-width: 600px) {
             width: 200px;
         }
     }
@@ -52,13 +52,13 @@ export const Header = styled.header`
         height: 45px;
         width: 45px;
 
-        @media (min-width: 768px) {
+        @media (min-width: 600px) {
             height: 38px;
             width: 38px;
         }
     }
 
-    @media (min-width: 768px) {
+    @media (min-width: 600px) {
         font-size: 1.688rem;
         margin: 0 22px 0 47px;
     }
